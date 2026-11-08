@@ -1,0 +1,15 @@
+# Kolbotn Hårstudio AS
+
+- Bransje: Frisering og barbering
+- Sted: Kolbotn
+- E-post: amkleven@gmail.com
+- Telefon: 66 80 14 70
+
+## Tjenester
+
+- Frisering: Klipp og styling av hår, tilpasset deg og det du ønsker.
+- Barbering: Hjelp med skjegg og barbering hos oss på Kolbotn.
+
+## Om nettsiden
+
+Laget av Nettsideferdig (https://nettsideferdig.no/).

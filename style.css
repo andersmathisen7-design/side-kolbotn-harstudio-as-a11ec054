@@ -1,0 +1,53 @@
+/* Fast fra Sidefabrikken: bestillingswidgeten. */
+:root { --nf-farge: #8a4b2d; }
+#nf-bestill [hidden] { display: none !important; }
+#nf-bestill button { font: inherit; padding: 0.5rem 0.9rem; margin: 0.2rem; border: 1px solid var(--nf-farge); border-radius: 6px; background: #fff; color: var(--nf-farge); cursor: pointer; }
+#nf-bestill button:disabled { opacity: 0.6; }
+#nf-bestill .nf-knapp { background: var(--nf-farge); color: #fff; }
+#nf-bestill .nf-tjeneste { display: block; width: 100%; text-align: left; }
+#nf-bestill .nf-tjeneste small, #nf-bestill .nf-vare small { display: block; color: #555; }
+#nf-bestill .nf-felt { display: block; margin: 0.5rem 0; }
+#nf-bestill input, #nf-bestill select, #nf-bestill textarea { font: inherit; padding: 0.4rem; border: 1px solid #c5cad3; border-radius: 4px; display: block; width: 100%; max-width: 24rem; }
+#nf-bestill input[type="checkbox"], #nf-bestill input[type="radio"] { display: inline-block; width: auto; margin: 0 0.4rem 0 0; vertical-align: middle; }
+#nf-bestill .nf-rad { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+#nf-bestill .nf-vare { padding: 0.4rem 0; border-bottom: 1px solid #e3e6eb; }
+#nf-bestill .nf-feil, #nf-bestill .nf-utsolgt { color: #b3261e; }
+#nf-bestill .nf-test { background: #fff4e5; padding: 0.4rem 0.8rem; border-radius: 6px; }
+#nf-bestill .nf-oppsummering { font-weight: 600; }
+#nf-bestill .nf-faner { display: flex; flex-wrap: wrap; gap: 0.25rem; margin: 0.5rem 0 1rem; }
+#nf-bestill .nf-fane.nf-valgt, #nf-bestill .nf-dag.nf-valgt { background: var(--nf-farge); color: #fff; }
+#nf-bestill .nf-adresse { position: relative; max-width: 24rem; }
+#nf-bestill .nf-forslag { position: absolute; top: 100%; left: 0; right: 0; z-index: 10; max-height: 15rem; overflow-y: auto; background: #fff; border: 1px solid #c5cad3; border-radius: 4px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+#nf-bestill .nf-forslag button { display: block; width: 100%; margin: 0; border: 0; border-radius: 0; padding: 0.5rem 0.75rem; text-align: left; color: inherit; }
+#nf-bestill .nf-forslag button:hover, #nf-bestill .nf-forslag button:focus { background: #f4f7fb; }
+#nf-bestill .nf-dager { display: flex; flex-wrap: wrap; gap: 0.25rem; margin: 0.5rem 0; }
+#nf-bestill .nf-dag.nf-full { text-decoration: line-through; color: #777; border-color: #c5cad3; }
+#nf-bestill .nf-tillegg { margin: 0.5rem 0; }
+#nf-bestill .nf-sporsmal { margin: 0.8rem 0; }
+#nf-bestill .nf-hjelp { display: block; font-size: 0.875rem; color: #666; margin: 0.15rem 0 0.25rem; }
+#nf-bestill .nf-sum { font-weight: 700; font-size: 1.15rem; }
+#nf-bestill .nf-ja-nei { display: flex; gap: 1.5rem; margin-top: 0.25rem; }
+.prisliste table { border-collapse: collapse; width: 100%; max-width: 36rem; }
+.prisliste th, .prisliste td { text-align: left; padding: 0.4rem 0.6rem 0.4rem 0; border-bottom: 1px solid #e3e6eb; vertical-align: top; }
+.prisliste td:last-child, .prisliste th:last-child { text-align: right; white-space: nowrap; padding-right: 0; }
+.prisliste small { color: #555; }
+.prisliste .prisinfo { font-size: 0.875rem; color: #555; }
+
+.nf-skjema .nf-felt { display: block; margin: 0.75rem 0; }
+.nf-skjema label, .nf-skjema legend { display: block; font-weight: 600; }
+.nf-skjema fieldset { border: 0; padding: 0; margin: 0.75rem 0; min-width: 0; }
+.nf-skjema fieldset label { font-weight: 400; }
+.nf-skjema input, .nf-skjema textarea { font: inherit; padding: 0.5rem; border: 1px solid #c5cad3; border-radius: 4px; display: block; width: 100%; max-width: 32rem; }
+.nf-skjema input[type="radio"] { display: inline-block; width: auto; margin: 0 0.4rem 0 0; vertical-align: middle; }
+.nf-skjema input:focus, .nf-skjema textarea:focus { outline: 2px solid var(--nf-farge); outline-offset: 1px; }
+.nf-skjema button { font: inherit; border: 0; cursor: pointer; }
+.nf-skjema .nf-info { font-size: 0.875rem; color: #555; }
+
+/* Designet */
+body{margin:0;background:#faf5ee;color:#2a1f1a;font-family:Georgia,serif;font-size:1.0625rem;line-height:1.55}*{box-sizing:border-box}a{color:#8a4b2d}a:focus-visible{outline:3px solid #2a1f1a;outline-offset:3px}.topp{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.25rem;padding:.75rem 1rem;background:#2a1f1a}.logo{display:inline-flex;align-items:center;gap:.6rem;min-height:44px;color:#faf5ee;text-decoration:none;font-weight:bold;font-size:1.1rem}.merke{display:inline-flex;align-items:center;justify-content:center;width:2.4rem;height:2.4rem;border-radius:50%;background:#8a4b2d;color:#fff;font-size:.9rem;letter-spacing:.04em}.meny{display:flex;flex-wrap:wrap;gap:.25rem 1rem;font-family:system-ui,Segoe UI,Helvetica,sans-serif}.meny a{display:inline-flex;align-items:center;min-height:44px;color:#faf5ee;text-decoration:none;font-size:1rem}.meny a:hover{text-decoration:underline}.topp a:focus-visible{outline-color:#faf5ee}.hero{padding:2.5rem 1rem 3rem;background:linear-gradient(160deg,#f1e4d3,#faf5ee 70%)}.inn{max-width:46rem;margin:0 auto}.hero h1{margin:0 0 1rem;font-size:2.1rem;line-height:1.15;color:#2a1f1a}.hero p{max-width:34rem;margin:0 0 1.5rem;font-size:1.2rem}.knapper{display:flex;flex-wrap:wrap;gap:.75rem}.knapp{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.6rem 1.4rem;border-radius:.4rem;background:#8a4b2d;color:#fff;border:2px solid #8a4b2d;text-decoration:none;font-family:system-ui,Segoe UI,Helvetica,sans-serif;font-weight:bold;font-size:1rem}.knapp.sek{background:transparent;color:#8a4b2d}.knapp:focus-visible{outline-color:#2a1f1a}.seksjon{padding:2.5rem 1rem}.seksjon h2{margin:0 0 1rem;font-size:1.6rem;line-height:1.2;border-bottom:3px solid #8a4b2d;display:inline-block;padding-bottom:.25rem}.seksjon p{max-width:38rem;margin:0 0 1rem}.kort-liste{display:grid;gap:1rem;grid-template-columns:1fr}.kort{padding:1.25rem;background:#fff;border-left:5px solid #8a4b2d;border-radius:.3rem;box-shadow:0 2px 8px rgba(42,31,26,.08)}.kort h3{margin:0 0 .5rem;font-size:1.25rem}.kort p{margin:0}.mork{background:#2a1f1a;color:#faf5ee}.mork h2{border-bottom-color:#d9a27f}.mork a{color:#f0c9ae}.mork .knapp{color:#fff}.mork .knapp.sek{color:#faf5ee;border-color:#faf5ee}.mork .knapp:focus-visible,.mork a:focus-visible{outline-color:#faf5ee}.bunn{padding:1.5rem 1rem;background:#1c1411;color:#faf5ee;font-family:system-ui,Segoe UI,Helvetica,sans-serif;font-size:1rem}.bunn a{display:inline-flex;align-items:center;min-height:44px;color:#f0c9ae}.bunn p{margin:0 0 .25rem}@media(min-width:40rem){.kort-liste{grid-template-columns:1fr 1fr}.hero{padding:4rem 1.5rem 4.5rem}.hero h1{font-size:2.9rem}.seksjon{padding:3.5rem 1.5rem}}
+
+/* Fast fra Sidefabrikken */
+.forhandsstripe { display: block !important; position: relative !important; z-index: 2147483647 !important; background: #b3261e !important; color: #fff !important; text-align: center !important; padding: 0.5rem 1rem !important; font: 600 1rem/1.4 system-ui, sans-serif !important; visibility: visible !important; opacity: 1 !important; max-height: none !important; height: auto !important; min-height: 0 !important; overflow: visible !important; margin: 0 !important; top: auto !important; left: auto !important; right: auto !important; bottom: auto !important; width: auto !important; transform: none !important; clip-path: none !important; filter: none !important; text-indent: 0 !important; font-size: 1rem !important; }
+.nf-byra { display: block !important; position: static !important; inset: auto !important; z-index: auto !important; background: #fff !important; color: #4a5160 !important; text-align: center !important; padding: 0.75rem 1rem !important; margin: 0 !important; width: auto !important; max-width: none !important; height: auto !important; min-height: 0 !important; max-height: none !important; overflow: visible !important; visibility: visible !important; opacity: 1 !important; transform: none !important; clip-path: none !important; filter: none !important; font: 400 0.875rem/1.5 system-ui, sans-serif !important; letter-spacing: normal !important; text-indent: 0 !important; text-transform: none !important; }
+.nf-byra a { display: inline !important; position: static !important; color: inherit !important; text-decoration: underline !important; font: inherit !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
+.nf-felle { display: none !important; position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
